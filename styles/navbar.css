@@ -1,0 +1,115 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Nunitosans,sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+/* body{
+    background-color: #051646;
+} */
+#navbar{
+    width: 100%;
+    padding: 0% 1%;
+    height: 80px;
+    color: white;
+    font-size: 20px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+#navbar>div:nth-child(2) a{
+    text-decoration: none;
+    color: white;
+}
+#navbar>div:nth-child(1){
+    width: 10%;
+    cursor: pointer;
+}
+#navbar>div:nth-child(1)>img{
+    width: 100%;
+}
+#navbar>div:nth-child(2){
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar>div:nth-child(2)>div>div{
+    padding: 10px 15px;
+    cursor: pointer;
+}
+#navbar>div:nth-child(2)>div>div:hover{
+    border-bottom: 3px solid #174ad8;
+    /* text-decoration: underline; */
+}
+.fsec{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+#navbar>div:nth-child(2)>div:nth-child(2){
+    font-weight: bold;
+}
+#navbar>div:nth-child(2)>div:nth-child(2)>div:nth-child(3){
+    background-color: #3ba038;
+    border-radius: 40px;
+    font-size: 16px;
+}
+#navbar>div:nth-child(2)>div:nth-child(2)>div:nth-child(3):hover{
+    background-color: #2f5f2d;
+    border-bottom: 0px transparent;
+}
+.dropdown_btn{
+    /* display: none; */
+    position: relative;
+}
+.dropdown_btn>div {
+    display: none;
+}
+/* .dropdown_btn:hover>div {
+    display: block;
+} */
+.dropdown_btn:hover>.dropdown_menu{
+    display: block;
+    margin-top: 10px;
+    padding: 12px 20px;
+    position: absolute;
+    background-color: white;
+    color: black;            
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+}
+.item>div{
+    width: 200px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.item>div>img{
+    margin-right: 5px;
+}
+.item>div:hover{
+    color: #174ad8;
+    background-color: #cbd3eb;
+}
+hr{
+    color: #ccc;
+    background-color: #ccc;
+}
+.piggy_bank{
+    width: 100%;
+}
+.grey{
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #f5f2fa;
+}
