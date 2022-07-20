@@ -1,0 +1,88 @@
+.logo{
+ width: 20%;margin: auto;margin-top: 4%;display: flex;justify-content: center;text-align: center;height: 60px;
+}
+.main{
+    width: 30%;margin: auto;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.gradient-border {
+    background: linear-gradient(-90deg, #31bd95 0%, #7dd47a 22%, #7cccfa 42%, #1999e3 57%, #ca8bdb 78%, #7148bd 100%);
+    height: 16px;
+    max-width: 100%;
+}
+.header{
+    width: 70%;margin: auto;
+}
+
+.email{
+    width: 70%;margin: auto;margin-top: 30px;
+}
+.email>p{
+font-weight: bold;
+}
+#user_email{
+width: 90%;padding: 10px;
+}
+
+.password{
+    width: 70%;margin: auto;margin-top: 30px;
+}
+.password>p{
+font-weight: bold;
+}
+#user_pass{
+width: 90%;padding: 10px;
+}
+.sub{
+    width: 100%;display: flex;justify-content:space-between
+}
+.sub>p{
+    font-weight: bold;
+}
+.sub>a{
+    margin-top: 12px;
+}
+#btn{
+   width: 60%;margin:auto;
+    margin-top: 20px;margin-bottom: 20px;
+
+}
+#log{
+    padding: 20px;width: 100%;background-color: #8DCDF1;border-radius: 5px;border: transparent;margin-bottom: 25px;margin-top: 30px;
+}
+#footer{
+width: 30%;margin: auto;box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;background-color: #F1F5F7;padding-bottom: 20px;margin-top: -18px;
+}
+.cloud{
+  display: flex;width: 20%;justify-content: space-around;background-color: white;border: transparent;border-radius: 5px;
+}
+.cloud>img{
+    width: 30%;
+}
+
+.google{
+    border: 1px solid black;display: flex;width: 20%;justify-content: space-around;background-color: white;border: transparent;border-radius: 5px;
+}
+.google>img{
+    width: 30%;
+}
+.in{
+    border: 1px solid black;display: flex;width: 20%;justify-content: space-around;background-color: white;border: transparent;border-radius: 5px;
+}
+.in>img{
+    width: 30%;
+}
+#flex{
+    display: flex;justify-content: space-evenly;
+}
+.or>p{
+    margin-left: 250px;margin-bottom: 20px;width: 60px;
+}
+body{
+    background-color: #F1F5F7;
+}
+
+
+
+
+
+
