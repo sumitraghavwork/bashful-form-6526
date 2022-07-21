@@ -21,7 +21,7 @@ if(data.error==false){
     arr.push(logindata.username)
     // console.log(arr)
     localStorage.setItem("user_name",JSON.stringify(arr))
-    // window.location.href="../bashful-form-6526/index.html"
+     
 }
 else{
     alert("check Credentials")
