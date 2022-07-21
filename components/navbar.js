@@ -2,7 +2,7 @@ export { navbar }
 
 let navbar = () => {
   return `<div>
-    <img src="https://assets-global.website-files.com/60780a9b4720a47267a88257/6078144624947483c31b964f_logo-white.svg" alt="logo">
+   <img src="https://assets-global.website-files.com/60780a9b4720a47267a88257/6078144624947483c31b964f_logo-white.svg" alt="logo" >
 </div>
 <div>
     <div class="fsec">
@@ -46,7 +46,7 @@ let navbar = () => {
                 </div>
             </div>
         </div>
-        <div><a href="">Collaborative Hiring</a></div>
+        <div><a href="./collab.html">Collaborative Hiring</a></div>
         <div><a href="">Pricing</a></div>
         <div class="dropdown_btn">Resources
             <div class="dropdown_menu fsec">
