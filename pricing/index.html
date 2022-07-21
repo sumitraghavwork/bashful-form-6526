@@ -5,248 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing</title>
-    <style>
-        * {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        #heading {
-            text-align: center;
-            margin-top: 100px;
-            font-size: 50px;
-            color: #040E3C;
-            font-weight: bold;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        #pay {
-            height: 80px;
-            width: auto;
-            /* border: 1px solid; */
-            margin: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-        }
-        #monthly {
-            /* background-color: rgb(58, 128, 128); */
-            padding: 11px 25px;
-            border-radius: 20px;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            cursor: pointer;
-        }
-        #annually {
-            background-color: #040E3C;
-            padding: 11px 25px;
-            border-radius: 20px;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        #select {
-            margin-left: 30px;
-            padding: 11px 10px;
-            border-radius: 20px;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            border: 0px;
-            font-weight: bold;
-            font-size: 18px;
-            cursor: pointer;
-        }
-        #populer {
-            height: 30px;
-            width: 25%;
-            margin: auto;
-            border: 1px solid;
-            display: flex;
-            justify-content: center;
-            align-items:center;
-            background-color: #040E3C;
-            color: white;
-            font-weight: bold;
-            margin-top: 52px;
-        }
-        #bigbox {
-            width: 70%;
-            height: 1940px;
-            margin: auto;
-            border: 5px solid;
-            border-color: #040E3C;
-            margin-top: -1px;
-            border-radius: 20px;
-            display: flex;
-        }
-        #launch {
-            width: 33.5%;
-            height: 100%;
-            /* border: 1px solid; */
-            background-color: rgb(243, 243, 243);
-            text-align: center;
-        }
-
-        #launch1 {
-            width: 33%;
-            height: 100%;
-            /* border: 1px solid; */
-            background-color: rgb(219, 253, 253);
-            text-align: center;
-        }
-
-        #launch2 {
-            width: 33.5%;
-            height: 100%;
-            /* border: 1px solid; */
-            background-color: rgb(209, 219, 219);
-            text-align: center;
-        }
-
-
-
-        #scale {
-            width: 33%;
-            height: 100%;
-            background-color: rgb(192, 225, 226);
-            /* border: 1px solid; */
-        }
-        #lead {
-            width: 33%;
-            height: 100%;
-            background-color: azure;
-        }
-        #euro {
-            display: flex;
-            text-align: center;
-            /* gap: 10px; */
-            height: 50px;
-            width: 100%;
-            /* border: 1px solid; */
-            justify-content: center;
-            align-items: center;
-        }
-        strike {
-            font-size: 33px;
-            font-weight: bold;
-            color: #4D6072;
-            margin-right: 10px;
-        }
-        
-        span {
-            font-size: 44px;
-            font-weight: bold;
-            color:#040E3C;
-            
-        }
-        #month {
-            color: #4D6072;
-        }
-        #eurosumbol {
-            font-size: 20px;
-            margin-right: 5px;
-        }
-        #eurosumbol1 {
-            font-size: 24px;
-        }
-        #month {
-            color: #040E3C;
-            font-size: 20px;
-        }
-        #sixteen {
-            color: #4D6072;
-            margin-top: 10px;
-        }
-        #slot {
-            /* padding: 10px 70px; */
-            height: 40px;
-            width: 260px;
-            border-radius: 20px;
-            margin-top: 20px;
-            border-color: rgb(194, 190, 190);
-        }
-        #slot:hover {
-            border-color: rgb(46, 46, 211);
-        }
-        button {
-            padding: 12px 60px;
-            margin-top: 15px;
-            border-radius: 30px;
-            font-size: 18px;
-            font-weight: bold;
-            background-color: aliceblue;
-            cursor: pointer;
-        }
-        #nocredit {
-            color: #4D6072;
-            margin-top: 15px;
-        }
-        hr {
-            width: 90%;
-            margin-top: 40px;
-        }
-        #recrut {
-            color: #040E3C;
-            font-weight: bold;
-            margin-right: 80px;
-        }
-        #list1 img {
-            height: 30px;
-            width: 30px;
-            display: flex;
-            margin-top: 20px;
-            margin-left: 10px;
-        }
-        #firstline {
-            margin-top: -25px;
-            margin-left: 10px;
-            /* line-height: -50px; */
-        }
-        #start {
-            background-color: #040E3C;
-            color: white;
-            cursor: pointer;
-        }
-        #custom {
-            font-weight: bold;
-            color: #040E3C;
-            margin-top: 40px;
-            font-size: 20px;
-        }
-        #touch {
-            color: #4D6072;
-        }
-        #getin {
-            margin-top: 64px;
-            cursor: pointer;
-        }
-        #horiz {
-            margin-top: 147px;
-        }
-        #horiz1 {
-            margin-top: 486px;
-        }
-        #horiz2 {
-            margin-top: 45px;
-        }
-        #firstline {
-            color: #4D6072;
-        }
-        #all {
-            color: #4D6072;
-        }
-        #help {
-            font-weight: bold;
-            color: #040E3C;
-            margin-top: 40px;
-        }
-        #bottomimage img {
-            height: 80px;
-            width: 230px;
-            margin-top: 30px;
-        }
-        
-        
-
-    </style>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/bootstrap.css">
 </head>
 <body>
+    
+    <body id="body">
+        <div id="navbar" class="fsec">
+            <!-- import navbar here  -->
+        </div>
+    
     <div id="heading">Plans that grow with you</div>
 
     <div id="pay">
@@ -266,7 +36,7 @@
         
         <div id="launch">
             <div><img src="https://assets-global.website-files.com/60780a9b4720a47267a88257/61937c0413c9abb1ea5b7438_pricing-launch.svg" alt=""></div>
-            <h2>Launch</h2>
+            <h1>Launch</h1>
             <div id="all"><p>Launch your hiring here with all of your recruitment essentials.</p></div>
 
             <div id="euro">
@@ -362,7 +132,7 @@
 
     <div id="launch1">
         <div><img src="https://assets-global.website-files.com/60780a9b4720a47267a88257/61937ee07ffcdf31c0c54048_pricing-scale.svg" alt=""></div>
-        <h2>Scale</h2>
+        <h1>Scale</h1>
         <div id="all"><p>Scale your hiring processes with automation and team optimization.</p></div>
 
         <div id="euro">
@@ -441,11 +211,7 @@
     <div id="list1"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt="" ></div>
     <div id="firstline">Fair evaluations</div>
 
-    <!-- <div id="list1"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt="" ></div>
-    <div id="firstline">Essential reporting dashboard</div>
-
-    <div id="list1"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt="" ></div>
-    <div id="firstline">Team notes, tasks + mentions</div> -->
+    
 <hr id="horiz">
 <div id="help">HELPS GROWING COMPANIES LIKE</div>
 <div id="bottomimage"><img src="https://assets-global.website-files.com/60780a9b4720a47267a88257/618e383082a533a00c8e841b_hotjar%402x-p-500.png" alt=""></div>
@@ -456,23 +222,11 @@
         
 <div id="launch2">
     <div><img src="https://assets-global.website-files.com/60780a9b4720a47267a88257/61937eea4eb46f6e30eed1a9_pricing-lead.svg" alt=""></div>
-    <h2>Lead</h2>
+    <h1>Lead</h1>
     <div id="all"><p>Lead your hiring to the forefront with additional services and compliance to drive your hiring strategy.</p></div>
     <div id="custom">Custom pricing</div>
     <div id="touch">Get in touch for a tailor-made plan for you</div>
-    <!-- <div id="euro">
-            <div id="eurosumbol">€</div><strike>199</strike>
-            <div id="eurosumbol1">€</div><span>166</span>
-            <div id="month">/month</div>
-    </div>
-    <div id="sixteen">16% off when paid annually</div>
-    <select id="slot">
-        <option value="5">5 job slots</option>
-        <option value="10">10 job slots</option>
-        <option value="15">15 job slots</option>
-        <option value="20">20 job slots</option>
-        <option value="20+">20+ job slots</option>
-    </select> -->
+    
 
     <button id="getin">Get in touch</button>
 
@@ -512,43 +266,279 @@
 <div id="list1"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt="" ></div>
 <div id="firstline">BI connector</div>
 
-<!-- <div id="list1"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt="" ></div>
-<div id="firstline">Mobile app</div>
 
-<div id="list1"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt="" ></div>
-<div id="firstline">Unlimited users and data</div>
-
-<div id="list1"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt="" ></div>
-<div id="firstline">Two-way email and calendar sync</div>
-
-<div id="list1"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt="" ></div>
-<div id="firstline">Talent sourcing Chrome extension</div>
-
-<div id="list1"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt="" ></div>
-<div id="firstline">Marketplace access</div>
-
-<div id="list1"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt="" ></div>
-<div id="firstline">Live chat and award-winning</div>
-
-<div id="list1"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt="" ></div>
-<div id="firstline">Quick evaluations</div>
-
-<div id="list1"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt="" ></div>
-<div id="firstline">Social media connections (including Apply with LinkedIn)</div>
-
-<div id="list1"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt="" ></div>
-<div id="firstline">Essential reporting dashboard</div>
-
-<div id="list1"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt="" ></div>
-<div id="firstline">Team notes, tasks + mentions</div> -->
 <hr id="horiz1">
 <div id="help">HELPS ENTERPRISES LIKE</div>
 <div id="bottomimage"><img src="https://assets-global.website-files.com/60780a9b4720a47267a88257/60a51ca1a303e83cb8c34356_framestore.png" alt=""></div>
 
 </div>
-
-
+<!-- Last div of bigbox -->
     </div>
+
+    
+    <div id="any">Any question? Get in touch to learn more.</div>
+    <div id="compared">All features compared</div>
+
+    <div id="organise">
+        <div id="or">Organize your recruitment</div>
+        <div id="la">Launch</div>
+        <div id="sc">Scale</div>
+        <div id="le">Lead</div>
+    </div>
+    <hr id="orHr">
+
+
+    <div id="organise1">
+        <div id="or">User-friendly candidate pipelines</div>
+        <div id="la1"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="sc"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="le"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+    </div>
+    <hr id="orHr1">
+
+
+    <div id="organise1">
+        <div id="or">1,450+ free and paid job boards</div>
+        <div id="la1"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="sc"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="le"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+    </div>
+    <hr id="orHr1">
+
+    <div id="organise1">
+        <div id="or">Smart campaigns</div>
+        <div id="la2"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="sc"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="le"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+    </div>
+    <hr id="orHr1">
+
+    <div id="organise1">
+        <div id="or">Live chat and award-winning support</div>
+        <div id="la3"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="sc"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="le"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+    </div>
+    <hr id="orHr1">
+
+    <div id="organise1">
+        <div id="or">CareersHub - site editor</div>
+        <div id="la4"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="sc"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="le"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+    </div>
+    <hr id="orHr1">
+
+    <div id="organise1">
+        <div id="or">Jobs widget</div>
+        <div id="la5"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="sc"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="le"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+    </div>
+    <hr id="orHr1">
+
+    <div id="organise1">
+        <div id="or">Candidate video chat</div>
+        <div id="la6"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="sc"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="le"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+    </div>
+    <hr id="orHr1">
+
+    <div id="organise1">
+        <div id="or">Overdue candidate reminders</div>
+        <div id="la7"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="sc"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="le"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+    </div>
+    <hr id="orHr1">
+
+    <div id="organise1">
+        <div id="or">GDPR compliance features</div>
+        <div id="la8"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="sc"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="le"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+    </div>
+    <hr id="orHr1">
+
+    <div id="organise1">
+        <div id="or">Two-factor authentication (2FA)</div>
+        <div id="la9"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="sc"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="le"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+    </div>
+    <hr id="orHr1">
+
+    <div id="organise1">
+        <div id="or">Recruitee mobile app</div>
+        <div id="la10"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="sc"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="le"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+    </div>
+    <hr id="orHr1">
+
+    <div id="organise1">
+        <div id="or">Unlimited users and data</div>
+        <div id="la11"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="sc"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="le"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+    </div>
+    <hr id="orHr1">
+
+    <div id="organise1">
+        <div id="or">Two-way email and calendar sync</div>
+        <div id="la12"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="sc"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="le"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+    </div>
+    <hr id="orHr1">
+
+    <div id="organise1">
+        <div id="or">Talent sourcing Chrome extension</div>
+        <div id="la13"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="sc"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="le"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+    </div>
+    <hr id="orHr1">
+
+    <div id="organise1">
+        <div id="or">Email templates</div>
+        <div id="la14"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="sc"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="le"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+    </div>
+    <hr id="orHr1">
+
+    <div id="organise1">
+        <div id="or">Marketplace access</div>
+        <div id="la15"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="sc"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="le"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+    </div>
+    <hr id="orHr1">
+
+    <div id="organise1">
+        <div id="or">Social media connections (including LinkedIn Easy Apply)</div>
+        <div id="la16"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="sc"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="le"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+    </div>
+    <hr id="orHr1">
+
+    <div id="organise1">
+        <div id="or">Team notes, tasks, and mentions</div>
+        <div id="la1"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="sc"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="le"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+    </div>
+    <hr id="orHr1">
+
+    <div id="organise1">
+        <div id="or">Resume parser</div>
+        <div id="la17"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="sc"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="le"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+    </div>
+    <hr id="orHr1">
+
+    <div id="organise1">
+        <div id="or">Multiple talent pools</div>
+        <div id="la18"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="sc"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="le"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+    </div>
+    <hr id="orHr1">
+
+    <div id="organise1">
+        <div id="or">Essential reporting dashboards</div>
+        <div id="la19"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="sc"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="le"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+    </div>
+    <hr id="orHr1">
+
+    <div id="organise1">
+        <div id="or">Candidate profile print and PDF exports</div>
+        <!-- <div id=""><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div> -->
+        <div id="la20"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="le"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+    </div>
+    <hr id="orHr1">
+
+    <div id="organise1">
+        <div id="or">Multi-page careers site</div>
+        <!-- <div id=""><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div> -->
+        <div id="la21"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="le"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+    </div>
+    <hr id="orHr1">
+
+    <div id="organise1">
+        <div id="or">EEO Compliance</div>
+        <!-- <div id="la1"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div> -->
+        <div id="la22"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="le"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+    </div>
+    <hr id="orHr1">
+
+    <div id="organise1">
+        <div id="or">Fair evaluations</div>
+        <!-- <div id="la1"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div> -->
+        <div id="la23"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+        <div id="le"><img src="https://cdn-icons.flaticon.com/png/128/2732/premium/2732655.png?token=exp=1658334518~hmac=78cda2133392de1974e37e0366cf341c" alt=""></div>
+    </div>
+    <hr id="orHr1">
+</body>
+
+    <button id="see">See all features</button>
+
+
+    <div id="common">
+        <div id="co">
+            <div id="cq">Common questions</div>
+            <div id="Frequently">Frequently asked questions about Recruitee</div>
+            <div id="que">What is Recruitee?
+                <img src="https://assets-global.website-files.com/60780a9b4720a47267a88257/612615e3116059d90a769693_add-circle-outline.svg" alt="">
+            </div>
+            <hr id="quesHr">
+
+            <div id="que">How does Recruitee’s pricing work?
+                <img src="https://assets-global.website-files.com/60780a9b4720a47267a88257/612615e3116059d90a769693_add-circle-outline.svg" alt="">
+            </div>
+            <hr id="quesHr">
+
+            <div id="que">What is an active job slot?
+                <img src="https://assets-global.website-files.com/60780a9b4720a47267a88257/612615e3116059d90a769693_add-circle-outline.svg" alt="">
+            </div>
+            <hr id="quesHr">
+
+            <button id="btn">Show more questions</button>
+        </div>
+
+        <div id="willem">
+            <img src="https://assets-global.website-files.com/60780a9b4720a47267a88257/61a788cee862e22b175bf7f3_Willem-Molle.png" alt="">
+            <div id="spn">
+            You don’t need to use all the features for a great user experience.
+            When you have a small company, just use what you need. If your company is bigger, 
+            it’s easy to put more complex analytics and workflows into place.
+        </div>
+        
+        <div id="wm">Willem Molle</div>
+        <div id="owner">Owner at ETown Recruitment Services</div>
+        <div id="dot"><img src="https://assets-global.website-files.com/60780a9b4720a47267a88257/610bdafd05fe59c911ee2d5a_quote.svg" alt=""></div>
+        </div>
+    </div>
+
+    <div id="customer">More of our customers</div>
+
+    <div id="images">
+        <div><img src="https://assets-global.website-files.com/60780a9b4720a47267a88257/60a51b00c2e7996cead3827d_semrush.png" alt=""></div>
+        <div><img src="https://assets-global.website-files.com/60780a9b4720a47267a88257/60a51b00c2e7996cead3827d_semrush.png" alt=""></div>
+    </div>
+    
+    
+
 
 </body>
 </html>
+<script src="../scripts/import.js" type="module"></script>
