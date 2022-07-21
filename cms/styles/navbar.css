@@ -1,0 +1,48 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Nunitosans,sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+  
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(237, 87, 87); 
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+#navbar{
+    width: 100%;
+    padding: 0% 1%;
+    height: 10vh;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background-color: #cbd3eb;
+}
+#navbar>div>img{
+    display: block;
+}
+.flex>img{
+    height: 30px;
+    /* aspect-ratio: 1; */
+}
+.flex>div>div{
+    cursor: pointer;
+}
+#company_name{
+    color: red;
+}
