@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/bootstrap.css">
+    <link rel="stylesheet" href="./styles/dashboard.css">
+</head>
+<body>
+    <div id="navbar" class="flex">
+        <!-- import navbar here  -->
+    </div>
+    <div id="main-container">
+        <div id="sidebar">
+            <!-- add sidebar here  -->
+        </div>
+        <div id="container">
+            <div id="pages_link" class="pageLinks">
+                <!-- add pages link here  -->
+            </div>
+            <!-- add above data as it is  -->
+            <div id="candidata_data_div">
+                <!-- add canditate data here  -->
+                <div id="upper-container" class="grid col4 bdc">
+                    <div class="flex gap10 jcc bdcr2 boxrad20 hover point" id="company_name_website"> company_name_recruitee.com</div>
+                    <div class="flex gap10 jcc bdcr2 boxrad20 hover point"><img  src="./assets/candidate.png" alt="">Candidates: <span  id="candidate_count">candidate count</span></div>
+                    <div class="flex gap10 jcc bdcr2 boxrad20 hover point"><img  src="./assets/briefcaseflat.png" alt="">Job Posts: <span  id="job_count"> Jobs_count</span></div>
+                    <div class="flex gap10 jcc bdcr2 boxrad20 hover point"><img  src="./assets/archiveflat.png" alt="">Hired: <span id="hired_count"> Hired_count</span></div>
+                </div>
+                <div id="lower-container">
+                    <button class="btnD hover point"><a href="#">+ Add Candidate</a> </button>
+                    <button class="btnD hover point"><a href="#">+ Add Job Post</a> </button>
+                    <h2>Candidates Data</h2>
+                    <table class="w100">
+                        <thead>
+                            <tr class="w100">
+                                <th id="name" onclick="sortdata(this.id)" class="bdcr2 pd bgcm point">Name</th>
+                                <th id="qualification" onclick="sortdata(this.id)" class="bdcr2 pd bgcm point">Qualification</th>
+                                <th id="experience" onclick="sortdata(this.id)" class="bdcr2 pd bgcm point">Experience</th>
+                                <th id="job" onclick="sortdata(this.id)" class="bdcr2 pd bgcm point">Job</th>
+                                <th id="stage" onclick="sortdata(this.id)" class="bdcr2 pd bgcm point">Stage</th>
+                                <th id="score" onclick="sortdata(this.id)" class="bdcr2 pd bgcm point">Average Score</th>
+                                <th class="bdcr2 pd bgcm point">Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- add data here  -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./scripts/import.js" type="module"></script>
+<script src="./scripts/dashboard.js" type="module"></script>
+<script src="./scripts/candidateData.js"></script>
+<script src="./scripts/sortdata.js"></script>

@@ -1,0 +1,113 @@
+body{
+    background-color: #cbd3eb;
+}
+#main-container{
+    width: 100%;
+    height: 90vh;
+    position: sticky;
+    top: 60px;
+    left: 0px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 25fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    /* border: 1px solid red; */
+}
+#sidebar{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#sidebar>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+#sidebar>div>img{
+    width: 80%;
+    cursor: pointer;
+}
+#sidebar>div>img:hover{
+    transform: scale(1.08);
+}
+#sidebar>div:nth-child(1){
+    width: 100%;
+    height: 70vh;
+}
+#sidebar>div:nth-child(2){
+    width: 100%;
+}
+#container{
+    height: 90vh;
+    border-top-left-radius: 20px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+.pageLinks{
+    padding: 20px 0px;
+    overflow: auto;
+}
+.pageLinks>h3{
+    margin: 10px 0px;
+    padding: 5px 10px;
+    /* border: 1px solid #ccc; */
+    /* /* border-top: 2px; */
+    border-bottom: 2px solid #ccc
+}
+.pageLinks>div>a{
+    text-decoration: none;
+    color: black;
+}
+.pageLinks>div{
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.pageLinks>div:hover{
+    background-color: #cbd3eb;
+    border-radius: 20px;
+}
+.pageLinks>div>img{
+    width: 15%;
+}
+#candidata_data_div{
+    background-color: #d8dae0;
+    overflow: auto;
+}
+#upper-container{
+    height: 10vh;
+    background-color: #dee2f0;
+}
+#lower-container{
+    padding: 10px;
+    height: 80vh;
+    /* border: 1px solid red; */
+    position: sticky;
+    right: 0px;
+    bottom: 0px;
+    overflow: auto;
+    background-color: rgb(243, 229, 229);
+}
+.bgcm{
+    background-color: #dee2f0;
+}
+tbody>tr>td{
+    padding: 12px 20px;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+}
