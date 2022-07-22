@@ -201,6 +201,20 @@ let dummyData = [
     },
 ]
 window.addEventListener('load',()=>{
-    localStorage.setItem('candidateData',JSON.stringify(dummyData))
+    // localStorage.setItem('candidateData',JSON.stringify(dummyData))
+    makeDashboardData()
 })
-
+let makeDashboardData = ()=>{
+    let dummyData = JSON.parse(localStorage.getItem('dummyData')) || []
+    let newCandidate = JSON.parse(localStorage.getItem('newCandidate')) || []
+    let followed = JSON.parse(localStorage.getItem('followed')) || []
+    let qualified = JSON.parse(localStorage.getItem('qualified')) || []
+    let candidateData = JSON.parse(localStorage.getItem('candidateData')) || []
+    if(newCandidate.length != 0 || followed.length != 0 || qualified.length != 0){
+      candidateData = [...newCandidate,...followed,...qualified]
+    }else{
+      candidateData = [...dummyData]
+    }
+    console.log(candidateData)
+    localStorage.setItem('candidateData',JSON.stringify(candidateData))
+  }  

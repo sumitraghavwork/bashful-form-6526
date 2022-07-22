@@ -31,9 +31,7 @@
                     <div class="flex gap10 jcc bdcr2 boxrad20 hover point"><img  src="./assets/archiveflat.png" alt="">Hired: <span id="hired_count"> Hired_count</span></div>
                 </div>
                 <div id="lower-container">
-                    <button class="btnD hover point"><a href="#">+ Add Candidate</a> </button>
-                    <button class="btnD hover point"><a href="#">+ Add Job Post</a> </button>
-                    <h2>Candidates Data</h2>
+                    <h2>Candidates Trash Data</h2>
                     <table class="w100">
                         <thead>
                             <tr class="w100">
@@ -43,7 +41,8 @@
                                 <th id="job" onclick="sortdata(this.id)" class="bdcr2 pd bgcm point">Job</th>
                                 <th id="stage" onclick="sortdata(this.id)" class="bdcr2 pd bgcm point">Stage</th>
                                 <th id="score" onclick="sortdata(this.id)" class="bdcr2 pd bgcm point">Average Score</th>
-                                <!-- <th class="bdcr2 pd bgcm point">Remove</th> -->
+                                <th class="bdcr2 pd bgcm point">Restore</th>
+                                <th class="bdcr2 pd bgcm point">Remove</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -57,7 +56,4 @@
 </body>
 </html>
 <script src="./scripts/import.js" type="module"></script>
-<!-- <script src="./scripts/dashboard.js" type="module"></script> -->
-<script src="./scripts/candidateData.js"></script>
-<!-- <script src="./scripts/sortdata.js"></script> -->
-<script src="./scripts/dashboard.js"></script>
+<script src="./scripts/deleted.js"></script>
