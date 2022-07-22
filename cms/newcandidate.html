@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/bootstrap.css">
+    <link rel="stylesheet" href="./styles/dashboard.css">
+</head>
+<body>
+    <div id="navbar" class="flex">
+        <!-- import navbar here  -->
+    </div>
+    <div id="main-container">
+        <div id="sidebar">
+            <!-- add sidebar here  -->
+        </div>
+        <div id="container">
+            <div id="pages_link" class="pageLinks">
+                <!-- add pages link here  -->
+            </div>
+            <!-- add above data as it is  -->
+            <div id="candidata_data_div">
+                <!-- add canditate data here  -->
+                <div id="upper-container" class="grid col4 bdc">
+                    <div class="flex gap10 jcc bdcr2 boxrad20 hover point" id="company_name_website"> company_name_recruitee.com</div>
+                    <div class="flex gap10 jcc bdcr2 boxrad20 hover point"><img  src="./assets/candidate.png" alt="">Candidates: <span  id="candidate_count">candidate count</span></div>
+                    <div class="flex gap10 jcc bdcr2 boxrad20 hover point"><img  src="./assets/briefcaseflat.png" alt="">Job Posts: <span  id="job_count"> Jobs_count</span></div>
+                    <div class="flex gap10 jcc bdcr2 boxrad20 hover point"><img  src="./assets/archiveflat.png" alt="">Hired: <span id="hired_count"> Hired_count</span></div>
+                </div>
+                <div id="lower-container">
+
+<!-- starting -->
+
+<button class="open-button" onclick="openForm()">Open Form</button>
+
+<div class="form-popup" id="myForm">
+  <form action="" class="form-container">
+    <h1>Add-Candidate</h1>
+    <label for="id"><b>I-D</b></label>
+    <input id="one" type="text" placeholder="Enter id" name="id" required>
+
+    <label for="name"><b>Name</b></label>
+    <input id="two" type="text" placeholder="Enter Name" name="name" required>
+
+    <label for="qualification"><b>Qualification</b></label>
+    <input id="three" type="text" placeholder="Enter Qualification" name="qualification" required>
+
+    <label for="Experince"><b>Experiance</b></label>
+    <input id="four" type="text" placeholder="Enter Experince" name="Experiance" required>
+
+    <label for="job"><b>Job</b></label>
+    <input id="five" type="text" placeholder="Enter job" name="job" required>
+
+    <label for="stage"><b>stage</b></label>
+    <input id="six" type="text" placeholder="Enter stage" name="stage" required>
+
+
+    <label for="score"><b>score</b></label>
+    <input id="seven" type="text" placeholder="Enter Score" name="score" required>
+
+    <button onclick="cata()"  type="submit" class="btn">Add</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+              
+
+
+<!-- ending  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./scripts/import.js" type="module"></script>
+<!-- <script src="./scripts/dashboard.js" type="module"></script> -->
+<script src="./scripts/candidateData.js"></script>
+<!-- <script src="./scripts/sortdata.js"></script> -->

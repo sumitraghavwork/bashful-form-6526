@@ -1,0 +1,66 @@
+#img1{
+    margin-top: 100px;
+}
+#img2{
+    margin-top: 10px;
+}
+#img3{
+    margin-top: -4px;
+}
+#circle{
+    background-color: rgb(4, 14, 60);
+    margin-top: -100px;
+}
+#circle>img{
+    margin-left: 13%;
+}
+#btn{
+    height: 50px;
+    border-radius: 50px;
+    color: white;
+    background-color: green;
+    margin-left: 42%;
+    border: none;
+    margin-top: -50px;
+    width: 250px;
+    /* padding:5px 0px 5px 0px; */
+    /* padding-left: 10px; */
+}
+#circle>p{
+    margin-left: 45%;
+    color: white;
+    margin-top: 5px;
+}
+#div4{
+    background-color: aqua;
+}
+
+.img5{
+    margin-top: -4px;
+}
+.img6{
+    margin-top: 60px;
+}
+/* ---------------------------------------- */
+
+#navbar>div:nth-child(2) a{
+    text-decoration: none;
+    color: rgb(26, 76, 240);
+    /* -------------------------- */
+    /* color: white; */
+}
+.fsec{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    background-color:rgb(228, 228, 228);
+    /* ------------------------ */
+}
+.dropdown_btn{
+    /* display: none; */
+    position: relative;
+    color: rgb(26, 76, 240);
+    /* ---------------------------- */
+
+}
