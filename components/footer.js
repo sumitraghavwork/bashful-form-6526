@@ -1,4 +1,4 @@
-export {footer} 
+
 
 let footer=()=>{
     return `<div>
@@ -50,3 +50,4 @@ let footer=()=>{
     <div>ReferralsHub</div>
 </div>`
 }
+export {footer} 

@@ -1,9 +1,11 @@
 *{
-    margin: 0%;
+    /* margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     font-family: Nunitosans,sans-serif;
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased; */
+    
+   
 }
 /* body{
     background-color: #051646;
@@ -12,12 +14,15 @@
     width: 100%;
     padding: 0% 1%;
     height: 80px;
-    color: white;
-    font-size: 20px;
+    font-size: 18px;
     position: sticky;
     top: 0px;
     left: 0px;
+    color:#040E3C;
+    /* background-color: #fff; */
+    background-color: aqua;
 }
+
 #navbar>div:nth-child(2) a{
     text-decoration: none;
     color: white;

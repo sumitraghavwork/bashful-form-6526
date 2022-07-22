@@ -1,6 +1,13 @@
 
 * {
+    /* margin: 0%;
+    padding: 0%;
+    box-sizing: border-box; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    /* background-color: rgb(255, 245, 245); */
+    background-color: #fff;
 }
 #heading {
     text-align: center;
@@ -429,14 +436,14 @@ hr {
     background-color: rgb(243, 234, 236);
 }
 #willem {
-    width: 28%;
-    height: 86%;
+    width: 24%;
+    height: 73%;
     /* border: 1px solid; */
     margin-top: 80px;
     margin-left: 60px;
     /* font-size: 20px; */
     /* text-align: center; */
-    padding: 40px;
+    padding: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color:white;
 }
@@ -444,7 +451,7 @@ hr {
     height: 140px;
     width: 130px;
     margin-top: -92px;
-    margin-left: -20px;
+    margin-left: 30px;
 }
 #spn {
     font-size: 27px;
@@ -466,8 +473,8 @@ hr {
     margin-top: 8px;
 }
 #dot {
-    margin-left: 230px;
-    margin-top: 135px;
+    margin-left: 200px;
+    margin-top: 115px;
 }
 #customer {
     font-size: 28px;
@@ -475,4 +482,64 @@ hr {
     font-weight: bold;
     color: #040E3C;
     margin-top: 70px;
+}
+#imagegrid {
+    display: flex;
+    margin-left: 180px;
+}
+#imagegrid img {
+    height: 40px;
+    width: 130px;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+#lappi {
+    height: 270px;
+    width: 65%;;
+    /* border: 1px solid; */
+    margin: auto;
+    margin-top: 170px;
+    padding: 16px 20px;
+    background-color: #040E3C;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#lappi h1 {
+    font-size: 40px;
+    margin-top: 40px;
+    color: white;
+}
+#free {
+    font-size: 20px;
+    color: white;
+}
+#try {
+    padding: 10px 18px;
+    background-color: #3BA038;
+    border: 0px;
+    color: white;
+    margin-top: 40px;
+}
+#try1 {
+    /* width: 150px; */
+    padding: 10px 58px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 0px;
+    
+}
+#star {
+    display: flex;
+    margin-left: 180px;
+}
+#star img {
+    height: 40px;
+    width: 130px;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+#ladki {
+    height: 371px;
+    width: 360px;
+    margin-left: 620px;
+    margin-top: -330px;
 }

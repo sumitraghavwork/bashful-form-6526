@@ -1,4 +1,4 @@
-export { navbar }
+
 
 let navbar = () => {
   return `<div>
@@ -87,3 +87,4 @@ let navbar = () => {
     </div>
 </div>`
 }
+export { navbar }
