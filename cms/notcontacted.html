@@ -31,19 +31,18 @@
                     <div class="flex gap10 jcc bdcr2 boxrad20 hover point"><img  src="./assets/archiveflat.png" alt="">Hired: <span id="hired_count"> Hired_count</span></div>
                 </div>
                 <div id="lower-container">
-                    <button class="btnD hover point"><a href="#">+ Add Candidate</a> </button>
-                    <button class="btnD hover point"><a href="#">+ Add Job Post</a> </button>
-                    <h2>Candidates Data</h2>
+                    <h2>Not Contacted Candidates Data</h2>
                     <table class="w100">
                         <thead>
                             <tr class="w100">
-                                <th id="name" onclick="sortdata(this.id)" class="sort bdcr2 pd bgcm point">Name</th>
-                                <th id="qualification" onclick="sortdata(this.id)" class="sort bdcr2 pd bgcm point">Qualification</th>
-                                <th id="experience" onclick="sortdata(this.id)" class="sort bdcr2 pd bgcm point">Experience</th>
-                                <th id="job" onclick="sortdata(this.id)" class="sort bdcr2 pd bgcm point">Job</th>
-                                <th id="stage" onclick="sortdata(this.id)" class="sort bdcr2 pd bgcm point">Stage</th>
-                                <th id="score" onclick="sortdata(this.id)" class="sort bdcr2 pd bgcm point">Average Score</th>
-                                <!-- <th class="bdcr2 pd bgcm point">Remove</th> -->
+                                <th id="name" class="sort bdcr2 pd bgcm point">Name</th>
+                                <th id="qualification" class="sort bdcr2 pd bgcm point">Qualification</th>
+                                <th id="experience" class="sort bdcr2 pd bgcm point">Experience</th>
+                                <th id="job" class="sort bdcr2 pd bgcm point">Job</th>
+                                <th id="stage" class="sort bdcr2 pd bgcm point">Stage</th>
+                                <th id="score" class="sort bdcr2 pd bgcm point">Average Score</th>
+                                <th class="sort bdcr2 pd bgcm point">Contact</th>
+                                <th class="sort bdcr2 pd bgcm point">Remove</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -57,8 +56,4 @@
 </body>
 </html>
 <script src="./scripts/import.js" type="module"></script>
-<!-- <script src="./scripts/dashboard.js" type="module"></script> -->
-<script src="./scripts/candidateData.js"></script>
-<!-- <script src="./scripts/sortdata.js"></script> -->
-<!-- <script src="./scripts/dashboard.js"></script> -->
-<script src="./scripts/dashboardnew.js" type="module"></script>
+<script src="./scripts/notcontacted.js" type="module"></script>

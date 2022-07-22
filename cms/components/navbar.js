@@ -6,7 +6,7 @@ let navbar=()=>{
         <img class="w100" src="https://assets-global.website-files.com/60780a9b4720a47267a88257/6078144624947483c31b964f_logo-white.svg" alt="">
         </a>
     </div>
-    <img src="../assets/office.png" alt="">
+    <img src="./assets/office.png" alt="">
     <div id="company_name" class="pd bdc boxrad20 bgw">company_name</div>
     <div class="pd bdc boxrad20 bgw">Your Trial</div>
 </div>
@@ -17,9 +17,9 @@ let navbar=()=>{
     </div>
 </div>
 <div class="flex w20">
-    <img src="../assets/internet.png" alt="">
+    <img src="./assets/internet.png" alt="">
     <div>Careers Hub</div>
-    <img  src="../assets/bell.png" alt="">
+    <img  src="./assets/bell.png" alt="">
     <div id="username" class="boxrad50 bgw pd10">Ab</div>
 </div> `
 }
