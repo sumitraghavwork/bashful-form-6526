@@ -204,3 +204,42 @@ window.addEventListener('load',()=>{
     localStorage.setItem('candidateData',JSON.stringify(dummyData))
 })
 
+
+// starting
+function openForm() {
+    
+    document.getElementById("myForm").style.display = "block";
+    
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+  let LSarr=[]
+  cata=()=>{
+     console.log("hello")
+    let id=document.getElementById("one").value
+    let name=document.getElementById("two").value
+    let qualification=document.getElementById("three").value
+    let exp=document.getElementById("four").value
+    let job=document.getElementById("five").value
+    let stage=document.getElementById("six").value
+    let score=document.getElementById("seven").value
+ let userdata=new data(id,name,qualification,exp,job,stage,score)
+      LSarr.push(userdata)
+      localStorage.setItem("inLS",JSON.stringify(LSarr))
+
+    //   document.getElementById("myForm").value=null
+  }
+
+  class data {
+    constructor(i,n,q,e,j,s,w){
+        this.id=i;
+        this.name=n;
+        this.qualification=q;
+        this.experience=e;
+        this.job=j;
+        this.stage=s;
+        this.score=w;
+    }
+  }
