@@ -21,7 +21,7 @@ if(data.error==false){
     arr.push(logindata.username)
     // console.log(arr)
     localStorage.setItem("user_name",JSON.stringify(arr))
-     
+     window.location.href = '../cms/dashboard.html'
 }
 else{
     alert("check Credentials")

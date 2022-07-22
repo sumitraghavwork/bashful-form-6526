@@ -2,8 +2,9 @@ export { navbar,sidebar }
 
 let navbar=()=>{
     return `<div class="flex w30">
-    <div class="w30">
+    <div class="w30"><a href="./dashboard.html" alt="">
         <img class="w100" src="https://assets-global.website-files.com/60780a9b4720a47267a88257/6078144624947483c31b964f_logo-white.svg" alt="">
+        </a>
     </div>
     <img src="../assets/office.png" alt="">
     <div id="company_name" class="pd bdc boxrad20 bgw">company_name</div>
@@ -25,7 +26,7 @@ let navbar=()=>{
 
 let sidebar = ()=>{
     return `<div>
-    <img src="./assets/home.png" alt="">
+    <a href="./dashboard.html"><img src="./assets/home.png" alt=""></a>
     <img src="./assets/people.png" alt="">
     <img src="./assets/briefcase.png" alt="">
     <img src="./assets/message.png" alt="">

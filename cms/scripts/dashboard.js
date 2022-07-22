@@ -47,9 +47,9 @@ let sortdata = (dataType)=>{
         appendData(sorted,'candidateData')
         return
     }
-    sorted = candidateData.sort((a,b)=>{
-        if(a[dataType] > b[dataType]) return 1
-        if(a[dataType] < b[dataType]) return -1
+    sorted = candidateData.sort((a, b) => {
+        if (a[dataType].toLowerCase() > b[dataType].toLowerCase()) return 1
+        if (a[dataType].toLowerCase() < b[dataType].toLowerCase()) return -1
         return 0
     })
     console.log(sorted)

@@ -2,8 +2,9 @@ export { navbar }
 
 let navbar = () => {
   return `<div>
-   <img src="https://assets-global.website-files.com/60780a9b4720a47267a88257/6078144624947483c31b964f_logo-white.svg" alt="logo" >
-</div>
+  <a href="./index.html">
+  <img src="https://assets-global.website-files.com/60780a9b4720a47267a88257/6078144624947483c31b964f_logo-white.svg" alt="logo" >
+  </a></div>
 <div>
     <div class="fsec">
         <div class="dropdown_btn">Product
@@ -81,7 +82,7 @@ let navbar = () => {
         </div>
     </div>
     <div class="fsec">
-        <div><a href="">Login</a></div>
+        <div><a href="./login page/login.html">Login</a></div>
         <div><a href="">Get Demo</a></div>
         <div>Give it a shot</div>
     </div>

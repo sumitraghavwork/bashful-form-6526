@@ -33,6 +33,10 @@ body{
     width: 80%;
     cursor: pointer;
 }
+#sidebar>div>a>img{
+    width: 80%;
+    cursor: pointer;
+}
 #sidebar>div>img:hover{
     transform: scale(1.08);
 }
