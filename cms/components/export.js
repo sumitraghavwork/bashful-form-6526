@@ -1,4 +1,4 @@
-export { appendData,deleteData,updateCount }
+export { appendData,deleteData,updateCount ,eventListener}
 
 let appendData = (arr,key)=>{
     const tbody = document.querySelector('tbody');
@@ -44,6 +44,9 @@ let deleteData = (ele,id,key)=>{
     localStorage.setItem(`${key}`,JSON.stringify(filtered))
     appendData(filtered,key)
     updateCount(filtered)
+    let trashData = JSON.parse(localStorage.getItem(`trashData`)) || []
+    trashData.push(ele)
+    localStorage.setItem(`trashData`, JSON.stringify(trashData))
 }
 
 let eventListener=(ele)=>{

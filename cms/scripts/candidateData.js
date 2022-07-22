@@ -201,11 +201,28 @@ let dummyData = [
     },
 ]
 window.addEventListener('load',()=>{
-    localStorage.setItem('candidateData',JSON.stringify(dummyData))
+    // localStorage.setItem('candidateData',JSON.stringify(dummyData))
+    makeDashboardData()
 })
 
+let makeDashboardData = ()=>{
+    let dummyData = JSON.parse(localStorage.getItem('dummyData')) || []
+    let newCandidate = JSON.parse(localStorage.getItem('newCandidate')) || []
+    let followed = JSON.parse(localStorage.getItem('followed')) || []
+    let qualified = JSON.parse(localStorage.getItem('qualified')) || []
+    let candidateData = JSON.parse(localStorage.getItem('candidateData')) || []
+    if(newCandidate.length != 0 || followed.length != 0 || qualified.length != 0){
+      candidateData = [...newCandidate,...followed,...qualified]
+    }else{
+      candidateData = [...dummyData]
+    }
+    console.log(candidateData)
+    localStorage.setItem('candidateData',JSON.stringify(candidateData))
+  }  
 
-// starting
+
+
+
 function openForm() {
     
     document.getElementById("myForm").style.display = "block";
@@ -215,7 +232,7 @@ function openForm() {
   function closeForm() {
     document.getElementById("myForm").style.display = "none";
   }
-  let LSarr=[]
+  let LSarr=  JSON.parse(localStorage.getItem('newCandidate')) || []
   cata=()=>{
      console.log("hello")
     let id=document.getElementById("one").value
@@ -227,7 +244,7 @@ function openForm() {
     let score=document.getElementById("seven").value
  let userdata=new data(id,name,qualification,exp,job,stage,score)
       LSarr.push(userdata)
-      localStorage.setItem("inLS",JSON.stringify(LSarr))
+      localStorage.setItem("newCandidate",JSON.stringify(LSarr))
 
     //   document.getElementById("myForm").value=null
   }
