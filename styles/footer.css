@@ -10,3 +10,7 @@
     grid-template-rows: auto;
     gap: 20px;
 }
+#footer a{
+    text-decoration: none;
+    color: black;
+}
