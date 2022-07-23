@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=IBM+Plex+Sans+Arabic:wght@400;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=Lato:wght@700&family=Montserrat:wght@600&family=Nunito:wght@300&family=Open+Sans:wght@300&family=PT+Sans&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&family=Ubuntu:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=IBM+Plex+Sans+Arabic:wght@400;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=Lato:wght@700&family=Montserrat:wght@600&family=Nunito+Sans:wght@900&family=Nunito:wght@300&family=Open+Sans:wght@300&family=PT+Sans&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #f5f2fa;
+    font-family: 'Nunito', sans-serif;
+}
+#nav{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+}
+#right{
+    display: flex;
+    align-items: center;
+    
+    color: #222222;
+}
+#right>p{
+    margin-right: 5px;
+    font-size: 1.3rem;
+}
+#right>p+h3{
+    font-weight: bolder;
+}
+#left{
+    display: flex;
+    align-items: center;
+}
+#left>img{
+    width: 50%;
+}
+#form{
+    width: 33%;
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* height: 700px; */
+    background-color: #f5f2fa;
+    position: relative;
+    margin-top: 90px;
+    border-radius: 3px;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#img1{
+    position: absolute;
+    margin-left: 340px;
+    margin-top: 20px;
+}
+#img2{
+    position: relative;
+    margin-left: 580px;
+    margin-top: 460px;
+}
+hr{
+    margin-top: -10%;
+    width: 100%;
+    border: 8px solid #040e3c;
+    background-color: #040e3c;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 0 7.5% 0 7.5%;
+    margin-bottom: 45px;
+}
+#right:hover{
+    color: blue;
+    cursor: pointer;
+}
+#name{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+#firstName>p+input{
+    padding: 9px 45px 9px 8px;
+    border: 1px solid #c0cad4;
+}
+#lastName>p+input{
+    padding: 9px 45px 9px 8px;
+    border: 1px solid #c0cad4;
+}
+#companyName{
+    margin-bottom: 20px;
+}
+#companyName>p+input{
+    padding: 9px 263px 9px 8px;
+    border: 1px solid #c0cad4;
+}
+#form>h1{
+    color: #040e3c;
+    font-weight: 900;
+    font-size: 2.8rem;
+    line-height: 100%;
+    font-weight: 900;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 25px;
+}
+#firstName>p{
+    margin-bottom: 4px;
+}
+#lastName>p{
+    margin-bottom: 4px;
+}
+#firstName{
+    margin-bottom: 20px;
+}
+
+#companyName>p{
+    margin-bottom: 4px;
+}
+#email>p+input{
+    padding: 9px 265px 9px 8px;
+    border: 1px solid #c0cad4;
+}
+#email>p{
+    margin-bottom: 4px;
+}
+#email{
+    margin-bottom: 20px;
+}
+#companySize{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#companySize>div>p{
+    margin-bottom: 4px;
+}
+button{
+    border: 1px solid #c0cad4;
+    
+}
+p+div{
+    width: 10px;
+}
+p+button{
+    padding: 10px 34px 10px 34px;
+    margin-right: 8px;
+    font-weight: bold;
+    color: #04154a;
+    cursor: pointer;
+    border-radius: 4px;
+}
+p+button+button{
+    padding: 10px 25px 10px 25px;
+    margin-right: 8px;
+    font-weight: bold;
+    color: #04154a;
+    cursor: pointer;
+    border-radius: 4px;
+}
+p+button+button+button{
+    padding: 10px 25px 10px 25px;
+    margin-right: 8px;
+    font-weight: bold;
+    color: #04154a;
+    cursor: pointer;
+    border-radius: 4px;
+}
+p+button+button+button+button{
+    padding: 10px 34px 10px 34px;
+    font-weight: bold;
+    color: #04154a;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#moNumber{
+    /* display: flex; */
+    margin-bottom: 20px;
+    
+}
+#moNumber>p+div{
+    display: flex;
+    
+}
+select{
+    width: 115px;
+    padding: 9px 0px 9px 0px;
+    margin-right: 10px;
+    margin-left: -209px;
+    border: 1px solid #c0cad4;
+}
+select+input{
+    padding: 9px 146px 9px 0px;
+    border: 1px solid #c0cad4;
+}
+#moNumber>p{
+    margin-bottom: 4px;
+    margin-left: -210px;
+}
+textarea{
+    border: 1px solid #c0cad4;
+    resize: vertical;
+}
+#comment{
+    margin-bottom: 20px;
+}
+#comment>p{
+    margin-bottom: 4px;
+}
+#mybtn>button{
+    border: none;
+    padding: 12px 153px 12px 153px;
+    background-color: #040e3c;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+#mybtn{
+    margin-bottom: 15px;
+}
+span{
+    cursor: pointer;
+    color: #9bb4e4;
+}
+#privacy{
+    text-align: center;
+}
