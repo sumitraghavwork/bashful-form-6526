@@ -18,7 +18,7 @@
         display: flex;width: 60%;justify-content: center;margin: auto;
     }
     .subhead>p{
-        font-size: medium;
+        font-size:larger;
     }
     .formfeild{
       margin: auto;width: 60%;display: flex;flex-direction: column;
@@ -32,13 +32,18 @@
     
     .fullname{
         display: flex;flex-direction: column;
-        width: 60%;margin: auto;width: 70%;
+        width: 60%;margin: auto;width: 100%;
     }
+    /* .input{
+        border: 1px solid red;width: 50%;margin-left: 70px;
+        margin-top: 10px;
+    } */
     .fullname>p{
-        margin-left: 57px;width: 30%;font-weight: bold;
+        margin: auto;
+        width: 30%;font-weight: bold;margin-left: 170px;font-size: larger;
     }
    #first_name{
-    padding: 12px;
+    padding: 12px;width: 420px;margin-top: 10px;
    }
     .input{
         display: flex;justify-content:space-evenly;
@@ -47,17 +52,32 @@
         width: 60%;margin: auto;
     }
     .email>p{
-        margin-left: 20px;font-weight: bold;
+        margin-left: 20px;font-weight: bold;font-size: larger;
     }
   #user_email{
     margin-left: 20px;width: 90%;padding: 10px;
   }
 
+  .uname{
+    width: 60%;margin: auto;
+}
+.uname>p{
+    margin-left: 20px;font-weight: bold;font-size: larger;
+}
+.uname>input{
+margin-left: 20px;width: 90%;padding: 10px;
+}
+
+
+
+
+
+
   .phone{
     width: 60%;margin: auto;
 }
 .phone>p{
-    margin-left: 20px;font-weight: bold;
+    margin-left: 20px;font-weight: bold;font-size: larger;
 }
 #user_no{
 margin-left: 20px;width: 90%;padding: 10px;
@@ -67,7 +87,7 @@ margin-left: 20px;width: 90%;padding: 10px;
     width: 60%;margin: auto;
 }
 .pass>p{
-    margin-left: 20px;font-weight: bold;
+    margin-left: 20px;font-weight: bold;font-size: larger;
 }
 #user_pass{
 margin-left: 20px;width: 90%;padding: 10px;

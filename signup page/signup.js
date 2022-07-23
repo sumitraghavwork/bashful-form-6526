@@ -5,13 +5,15 @@ let ip=(id)=>{
 }
 
 let userip=async()=>{ 
-    let Cname=ip("admin_company_name")
-    let user_first_name=ip("first_name")
-    let last_name=ip("last_name")
-    let email=ip("user_email")
-    let phone_no=ip("user_no")
-    let password=ip("user_pass")
-    let userdata=new signup(Cname,user_first_name,email,password,phone_no,last_name)
+    let Cname=ip("admin_company_name");
+    let email=ip("user_email");
+    let pass=ip("user_pass")
+    let username=ip("user_name");
+    let phone=ip("user_no");
+    let des=ip("first_name")
+
+    let userdata=new signup(Cname,email,pass,username,phone,des)
+    console.log(userdata)
     
     let serverlink=`https://masai-api-mocker.herokuapp.com/auth/register`
    
@@ -37,12 +39,14 @@ let userip=async()=>{
 }
 
 class signup{
-    constructor(n,u,e,p,m,d){
-        this.name=n;
-        this.username=u;
-        this.email=e;
-        this.password=p
-        this.mobile=m
-        this.description=d
+    constructor(n,e,p,u,m,d){
+       this.name=n;
+       this.email=e;
+       this.password=p;
+       this.username=u;
+       this.mobile=m;
+      
+       
+       this.description=d
     }
 }

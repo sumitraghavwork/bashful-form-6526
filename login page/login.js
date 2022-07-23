@@ -2,11 +2,11 @@
 let getdata=async()=>{
     let arr=[]
 let loginurl=`https://masai-api-mocker.herokuapp.com/auth/login`
-let uname=document.getElementById("user_email").value
+let uname=document.getElementById("user_name").value
 let pass=document.getElementById("user_pass").value
   
 let logindata=new login(pass,uname)
-    // console.log(logindata)
+     //console.log(logindata)
 let res=await fetch(loginurl,{
 
     method:"POST",
@@ -16,12 +16,16 @@ let res=await fetch(loginurl,{
     },
 });
 let data=await res.json()
+// console.log(data)
+
 if(data.error==false){
     alert("Login Sucess")
-    arr.push(logindata.username)
-    // console.log(arr)
+    arr = [{username:uname,token:data.token}]
+    console.log(arr)
+    console.log(data)
     localStorage.setItem("user_name",JSON.stringify(arr))
-     
+    localStorage.setItem('dummyData',JSON.stringify(dummyData))
+    window.location.href = '../cms/dashboard.html'
 }
 else{
     alert("check Credentials")
@@ -29,9 +33,191 @@ else{
 }
 
 class login{
-    constructor(u,p){
-        
-        this.password=p
+    constructor(p,u){
         this.username=u;
+        this.password=p
+        
     }
 }
+let dummyData = [
+    {
+        id:1,
+        name:'ram',
+        qualification:'graduate',
+        experience:'3',
+        job:'sde-1',
+        stage:'interview',
+        score:'70'       
+    },
+    {
+        id:2,
+        name:'chandu',
+        qualification:'engineer',
+        experience:'4',
+        job:'sde-1',
+        stage:'managerial',
+        score:'35'       
+    },
+    {
+        id:3,
+        name:'nrupul',
+        qualification:'post-graduate',
+        experience:'5',
+        job:'sde-1',
+        stage:'technical',
+        score:'96'       
+    },
+    {
+        id:4,
+        name:'yogesh',
+        qualification:'graduate',
+        experience:'7',
+        job:'sde-1',
+        stage:'technical',
+        score:'86'       
+    },
+    {
+        id:5,
+        name:'chandra',
+        qualification:'graduate',
+        experience:'0',
+        job:'sde-1',
+        stage:'assesment',
+        score:'95'       
+    },
+    {
+        id:6,
+        name:'bhatt',
+        qualification:'graduate',
+        experience:'2',
+        job:'sde-1',
+        stage:'shortlisted',
+        score:'20'       
+    },
+    {
+        id:7,
+        name:'venu',
+        qualification:'graduate',
+        experience:'1',
+        job:'sde-1',
+        stage:'hired',
+        score:'100'       
+    },
+    {
+        id:8,
+        name:'aditya',
+        qualification:'graduate',
+        experience:'3',
+        job:'sde-1',
+        stage:'hired',
+        score:'50'       
+    },
+    {
+        id:9,
+        name:'ankush',
+        qualification:'graduate',
+        experience:'11',
+        job:'sde-1',
+        stage:'interview',
+        score:'95'       
+    },
+    {
+        id:10,
+        name:'samiksha',
+        qualification:'graduate',
+        experience:'10',
+        job:'sde-1',
+        stage:'technical',
+        score:'60'       
+    },
+    {
+        id:1,
+        name:'ram',
+        qualification:'graduate',
+        experience:'3',
+        job:'sde-1',
+        stage:'technical-2',
+        score:'70'       
+    },
+    {
+        id:2,
+        name:'chandu',
+        qualification:'engineer',
+        experience:'4',
+        job:'sde-1',
+        stage:'management',
+        score:'35'       
+    },
+    {
+        id:3,
+        name:'nrupul',
+        qualification:'post-graduate',
+        experience:'5',
+        job:'sde-1',
+        stage:'management',
+        score:'96'       
+    },
+    {
+        id:4,
+        name:'yogesh',
+        qualification:'graduate',
+        experience:'7',
+        job:'sde-1',
+        stage:'technical',
+        score:'86'       
+    },
+    {
+        id:5,
+        name:'chandra',
+        qualification:'graduate',
+        experience:'0',
+        job:'sde-1',
+        stage:'hr',
+        score:'95'       
+    },
+    {
+        id:6,
+        name:'bhatt',
+        qualification:'graduate',
+        experience:'2',
+        job:'sde-1',
+        stage:'hr',
+        score:'20'       
+    },
+    {
+        id:7,
+        name:'venu',
+        qualification:'graduate',
+        experience:'1',
+        job:'sde-1',
+        stage:'hr',
+        score:'100'       
+    },
+    {
+        id:8,
+        name:'aditya',
+        qualification:'graduate',
+        experience:'3',
+        job:'sde-1',
+        stage:'hired',
+        score:'50'       
+    },
+    {
+        id:9,
+        name:'ankush',
+        qualification:'graduate',
+        experience:'11',
+        job:'sde-1',
+        stage:'shortlisted',
+        score:'95'       
+    },
+    {
+        id:10,
+        name:'samiksha',
+        qualification:'graduate',
+        experience:'10',
+        job:'sde-1',
+        stage:'shortlisted',
+        score:'60'       
+    },
+]

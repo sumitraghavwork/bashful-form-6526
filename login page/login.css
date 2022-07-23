@@ -13,13 +13,13 @@
     width: 70%;margin: auto;
 }
 
-.email{
+.user_name{
     width: 70%;margin: auto;margin-top: 30px;
 }
 .email>p{
 font-weight: bold;
 }
-#user_email{
+#user_name{
 width: 90%;padding: 10px;
 }
 
