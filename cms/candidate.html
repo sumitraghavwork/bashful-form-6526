@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/bootstrap.css">
+    <link rel="stylesheet" href="./styles/dashboard.css">
+    <style>
+        #details>div{
+            padding: 12px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar" class="flex">
+        <!-- import navbar here  -->
+    </div>
+    <div id="main-container">
+        <div id="sidebar">
+            <!-- add sidebar here  -->
+        </div>
+        <div id="container">
+            <div id="pages_link" class="pageLinks">
+                <!-- add pages link here  -->
+            </div>
+            <!-- add above data as it is  -->
+            <div id="candidata_data_div">
+                <!-- add canditate data here  -->
+                <h1 id="name">Candidate Name</h1>
+                <div class="grid col3 w80 ">
+                    <div class="pd">
+                        <img class="w100 bdc boxrad20 bgw" src="./assets/candidate.png" alt="">
+                    </div>
+                    <div id="details">
+                        <div>Name: </div>
+                        <div>Id: </div>
+                        <div>Qualification: </div>
+                        <div>Experience: </div>
+                        <div>Job: </div>
+                        <div>Stage: </div>
+                        <div>Score: </div>
+                    </div>
+                    <div id="candidate_details">
+                        <!-- append data here  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./scripts/import.js" type="module"></script>
+<script src="./scripts/candidate.js"></script>

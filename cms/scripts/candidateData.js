@@ -18,190 +18,8 @@ class NewCandidate extends Candidate{
     }
 }
 
-let dummyData = [
-    {
-        id:1,
-        name:'ram',
-        qualification:'graduate',
-        experience:'3',
-        job:'sde-1',
-        stage:'interview',
-        score:'70'       
-    },
-    {
-        id:2,
-        name:'chandu',
-        qualification:'engineer',
-        experience:'4',
-        job:'sde-1',
-        stage:'managerial',
-        score:'35'       
-    },
-    {
-        id:3,
-        name:'nrupul',
-        qualification:'post-graduate',
-        experience:'5',
-        job:'sde-1',
-        stage:'technical',
-        score:'96'       
-    },
-    {
-        id:4,
-        name:'yogesh',
-        qualification:'graduate',
-        experience:'7',
-        job:'sde-1',
-        stage:'technical',
-        score:'86'       
-    },
-    {
-        id:5,
-        name:'chandra',
-        qualification:'graduate',
-        experience:'0',
-        job:'sde-1',
-        stage:'assesment',
-        score:'95'       
-    },
-    {
-        id:6,
-        name:'bhatt',
-        qualification:'graduate',
-        experience:'2',
-        job:'sde-1',
-        stage:'shortlisted',
-        score:'20'       
-    },
-    {
-        id:7,
-        name:'venu',
-        qualification:'graduate',
-        experience:'1',
-        job:'sde-1',
-        stage:'hired',
-        score:'100'       
-    },
-    {
-        id:8,
-        name:'aditya',
-        qualification:'graduate',
-        experience:'3',
-        job:'sde-1',
-        stage:'hired',
-        score:'50'       
-    },
-    {
-        id:9,
-        name:'ankush',
-        qualification:'graduate',
-        experience:'11',
-        job:'sde-1',
-        stage:'interview',
-        score:'95'       
-    },
-    {
-        id:10,
-        name:'samiksha',
-        qualification:'graduate',
-        experience:'10',
-        job:'sde-1',
-        stage:'technical',
-        score:'60'       
-    },
-    {
-        id:1,
-        name:'ram',
-        qualification:'graduate',
-        experience:'3',
-        job:'sde-1',
-        stage:'technical-2',
-        score:'70'       
-    },
-    {
-        id:2,
-        name:'chandu',
-        qualification:'engineer',
-        experience:'4',
-        job:'sde-1',
-        stage:'management',
-        score:'35'       
-    },
-    {
-        id:3,
-        name:'nrupul',
-        qualification:'post-graduate',
-        experience:'5',
-        job:'sde-1',
-        stage:'management',
-        score:'96'       
-    },
-    {
-        id:4,
-        name:'yogesh',
-        qualification:'graduate',
-        experience:'7',
-        job:'sde-1',
-        stage:'technical',
-        score:'86'       
-    },
-    {
-        id:5,
-        name:'chandra',
-        qualification:'graduate',
-        experience:'0',
-        job:'sde-1',
-        stage:'hr',
-        score:'95'       
-    },
-    {
-        id:6,
-        name:'bhatt',
-        qualification:'graduate',
-        experience:'2',
-        job:'sde-1',
-        stage:'hr',
-        score:'20'       
-    },
-    {
-        id:7,
-        name:'venu',
-        qualification:'graduate',
-        experience:'1',
-        job:'sde-1',
-        stage:'hr',
-        score:'100'       
-    },
-    {
-        id:8,
-        name:'aditya',
-        qualification:'graduate',
-        experience:'3',
-        job:'sde-1',
-        stage:'hired',
-        score:'50'       
-    },
-    {
-        id:9,
-        name:'ankush',
-        qualification:'graduate',
-        experience:'11',
-        job:'sde-1',
-        stage:'shortlisted',
-        score:'95'       
-    },
-    {
-        id:10,
-        name:'samiksha',
-        qualification:'graduate',
-        experience:'10',
-        job:'sde-1',
-        stage:'shortlisted',
-        score:'60'       
-    },
-]
+
 window.addEventListener('load',()=>{
-    // localStorage.setItem('candidateData',JSON.stringify(dummyData))
     makeDashboardData()
 })
 
@@ -234,29 +52,17 @@ function openForm() {
   }
   let LSarr=  JSON.parse(localStorage.getItem('newCandidate')) || []
   cata=()=>{
-     console.log("hello")
+    //  console.log("hello")
     let id=document.getElementById("one").value
     let name=document.getElementById("two").value
     let qualification=document.getElementById("three").value
-    let exp=document.getElementById("four").value
+    let exp=+document.getElementById("four").value
     let job=document.getElementById("five").value
     let stage=document.getElementById("six").value
-    let score=document.getElementById("seven").value
- let userdata=new data(id,name,qualification,exp,job,stage,score)
+    let score=+document.getElementById("seven").value
+ let userdata=new Candidate(id,name,qualification,exp,job,stage,score)
       LSarr.push(userdata)
       localStorage.setItem("newCandidate",JSON.stringify(LSarr))
-
+      alert(`${name}'s details saved Successfully`)
     //   document.getElementById("myForm").value=null
-  }
-
-  class data {
-    constructor(i,n,q,e,j,s,w){
-        this.id=i;
-        this.name=n;
-        this.qualification=q;
-        this.experience=e;
-        this.job=j;
-        this.stage=s;
-        this.score=w;
-    }
   }
