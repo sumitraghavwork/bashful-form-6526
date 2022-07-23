@@ -30,20 +30,19 @@
         width: 90%;margin-left: 20px;margin: 10px;padding: 10PX;
     }
     
-    .fullname{
-        display: flex;flex-direction: column;
-        width: 60%;margin: auto;width: 100%;
+    .full_name{
+        
     }
     /* .input{
         border: 1px solid red;width: 50%;margin-left: 70px;
         margin-top: 10px;
     } */
-    .fullname>p{
-        margin: auto;
-        width: 30%;font-weight: bold;margin-left: 170px;font-size: larger;
+    .full_name>p{
+        
+        font-weight: bold;margin-left: 125px;font-size: larger;
     }
    #first_name{
-    padding: 12px;width: 420px;margin-top: 10px;
+    padding: 12px;width: 350px;margin-top: 10px;
    }
     .input{
         display: flex;justify-content:space-evenly;
