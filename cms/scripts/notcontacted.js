@@ -41,6 +41,7 @@ let appendData = (arr, key) => {
     res.addEventListener('click', () => {
       let data = restoreData(ele, index, key, 'followed')
       appendData(data, key)
+      alert(`${name} has been Succefully Contacted`)
     })
 
     const del = document.createElement('td')

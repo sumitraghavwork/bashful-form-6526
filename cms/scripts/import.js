@@ -1,4 +1,4 @@
-import { navbar,sidebar } from "../components/navbar.js";
+import { navbar,sidebar,userDetails } from "../components/navbar.js";
 import { pagelinks } from "../components/pagelinks.js";
 
 const nav = document.getElementById('navbar');
@@ -9,3 +9,5 @@ sidbr.innerHTML = sidebar()
 
 const page = document.getElementById('pages_link');
 page.innerHTML = pagelinks()
+
+userDetails()

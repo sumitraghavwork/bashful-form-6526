@@ -12,6 +12,7 @@ let restoreData = (ele, id, key,key2) => {
     updateCount(filtered)
     let nextData = JSON.parse(localStorage.getItem(`${key2}`)) || []
     console.log(key2,nextData)
+    ele.stage = key2
     nextData.push(ele)
     localStorage.setItem(`${key2}`, JSON.stringify(nextData))
     return filtered
@@ -39,7 +40,7 @@ let restoreData = (ele, id, key,key2) => {
       let temp = []
       temp.push(ele)
       localStorage.setItem('candidate', JSON.stringify(temp))
-      // window.location.href = './candidate.html'
+      window.location.href = './candidate.html'
     })
     return element
   }

@@ -1,8 +1,8 @@
-export { navbar,sidebar }
+export { navbar,sidebar ,userDetails}
 
 let navbar=()=>{
     return `<div class="flex w30">
-    <div class="w30"><a href="./dashboard.html" alt="">
+    <div class="w30"><a href="../index.html" alt="">
         <img class="w100" src="https://assets-global.website-files.com/60780a9b4720a47267a88257/6078144624947483c31b964f_logo-white.svg" alt="">
         </a>
     </div>
@@ -37,4 +37,21 @@ let sidebar = ()=>{
 <div>
     <img src="./assets/settings.png" alt="">
 </div>`
+}
+
+let userDetails = ()=>{
+    let logout = document.getElementById('username');
+    logout.innerText = 'LogOut'
+    logout.addEventListener('click',()=>{
+        let temp = []
+        localStorage.setItem('user_name',JSON.stringify(temp))
+        window.location.href = '../index.html'
+    })
+    const company = document.getElementById('company_name');
+    const company2 = document.getElementById('company_name_website');
+    let userdetails = JSON.parse(localStorage.getItem('user_name')) || []
+    console.log(userdetails)
+    let {username} = userdetails[0]
+    company.innerText = username
+    company2.innerText = username
 }
