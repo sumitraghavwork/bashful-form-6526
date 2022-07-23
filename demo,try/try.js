@@ -66,7 +66,7 @@ function func2(){
     let isNumber=false;
     for(let p=0;p<data.length;++p){
        let num=+data[p];
-       if(num-1){
+       if(num-(-1)){
         console.log('pawan')
         isNumber=true;
         break;
