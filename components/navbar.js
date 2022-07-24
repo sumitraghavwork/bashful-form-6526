@@ -12,8 +12,8 @@ let navbar = () => {
                 <div class="item">Identity
                     <hr>
                     <div><img src="https://assets-global.website-files.com/60780a9b4720a47267a88257/60ae39d8085a3c456b442357_icon-pipeline.svg" alt=""><a style="color:black;text-decoration:none;" href="./pipeline.html">Pipeline</a></div>
-                    <div><img src="https://assets-global.website-files.com/60780a9b4720a47267a88257/60ae39d86296f7d9ed0d4b8d_icon-person-add.svg" alt=""> Hiring Team</div>
-                    <div><img src="https://assets-global.website-files.com/60780a9b4720a47267a88257/60ae39d7e765e5e49a6290ae_icon-career-hub.svg" alt=""> Career Hub</div>
+                    <div><img src="https://assets-global.website-files.com/60780a9b4720a47267a88257/60ae39d86296f7d9ed0d4b8d_icon-person-add.svg" alt=""><a style="color:black;text-decoration:none;" href="./hiring.html"> Hiring Team</a></div>
+                    <div><img src="https://assets-global.website-files.com/60780a9b4720a47267a88257/60ae39d7e765e5e49a6290ae_icon-career-hub.svg" alt=""><a style="color:black;text-decoration:none;" href="./career.html">  Career Hub</a></div>
                     <div><img src="https://assets-global.website-files.com/60780a9b4720a47267a88257/60ae39d79f5ef3126c924396_icon-code.svg" alt=""> Api & Workspace</div>                         
                 </div>
                 <div class="item">Source

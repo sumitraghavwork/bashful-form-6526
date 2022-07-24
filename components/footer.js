@@ -19,7 +19,7 @@ let footer=()=>{
     <hr>
     <div><a href="./pipeline.html">Pipeline</a></div>
     <div>Smart Campaign</div>
-    <div>Career Hub</div>
+    <div><a style="color:black;text-decoration:none;" href="./career.html">  Career Hub</a></div>
     <div>ReferralsHub</div>
     <div>ReferralsHub</div>
     <div>Pipeline</div>
