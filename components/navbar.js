@@ -83,8 +83,8 @@ let navbar = () => {
     </div>
     <div class="fsec">
         <div><a href="./login page/login.html">Login</a></div>
-        <div><a href="">Get Demo</a></div>
-        <div>Give it a shot</div>
+        <div><a href="./demo,try/demo.html">Get Demo</a></div>
+        <div><a href="./demo,try/try.html">Give it a Shot</a></div>
     </div>
 </div>`
 }
