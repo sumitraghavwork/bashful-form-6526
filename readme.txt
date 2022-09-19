@@ -1,26 +1,28 @@
-Unit-3 Construct Week Project
----------------------------------
-website clone: https://recruitee.com/
-----------------------------------------
 
-####################################################
+# Recruitee.com Website Clone
 
-Team Members
-    Name                            Student_code
-1. Sumit Raghav (Team Lead)         fw19_0809
-2. Manmohan Singh Jina              fw18_0455
-3. Pawan Kumar                      fw18_1190
-4. Vikram Ram                       fw17_0906
-5. Shubham Pandey                   fp03_260
+Recruitee is built for bringing teams together. That’s why we design tools that allow you to structure and customize your recruitment into a collaborative process. More than 5,000 companies use our collaborative hiring software to share the work, speed up daily processes, and grow their teams together.
 
-####################################################
 
-Project Timelines (5 Days)
-Start: 19-July-2022
-End:   23-July-2022
-------------------------------------
+## Acknowledgements
 
-Tech Stack
-HTML, CSS, JavaScript
+ - [Live Project Link](https://inquisitive-kashata-a201b3.netlify.app/)
+## Authors
 
----------------------------------------
+- [@sumitraghavwork](https://github.com/sumitraghavwork)
+- [@VikramRam2001](https://github.com/VikramRam2001)
+- [@manmohanjina](https://github.com/manmohanjina)
+- [@Shubh596](https://github.com/Shubh596)
+- [@Pawan8085](https://github.com/Pawan8085)
+
+
+
+## Screenshots
+
+![App Screenshot](https://github.com/sumitraghavwork/sumitraghavwork.github.io/blob/main/data/recruitee.png?raw=true)
+
+
+
+## Appendix
+
+Any additional information goes here
