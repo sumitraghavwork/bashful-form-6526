@@ -4,73 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="signup.css">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./signup.css">
 </head>
-
 <body>
-    <div class="logo"><img src="https://auth.recruitee.com/images/logo.622690bc5b2f3696191851862c8ff3b5.svg" alt=""></div>
-<div id="outer">
-    <div class="gradient-border"></div>
-   
-    <div class="header"><h2>Create a company account</h2></div>
-    <div class="subhead"><p>
-        Does your company already use Recruitee? <a href="../login page/login.html">login</a> </p>  </div>
-        <div class="formfeild"><label for="admin_company_name">Company Name</label>
-
-
-
-        <input type="text" id="admin_company_name" placeholder="Your Company Name"></div>
-
-         
-
-        <div class="fullname">
-            <p>full name</p>
-            <div class="input"><input type="text" placeholder="First Name" id="first_name" > 
-        </div>
-
-        <div class="email">
-            <p>Email</p>
-            <input type="text" placeholder="Email" id="user_email">
-        </div>
-
-        <div class="pass">
-            <p>password</p>
-            <input type="password"  id="user_pass" placeholder="password">
-        </div>
-
-        
-        <div class="uname">
-            <p>User Name</p>
-            <input type="text" placeholder="User Name" id="user_name">
-        </div>
-
-        <div class="phone">
-            <p>Phone No</p>
-            <input type="text"  id="user_no" placeholder="Phone No">
-        </div>
-
-    
-       
-
-        <div class="info"><p>By signing up for our service, you agree to our</p><a href="">Terms & condition</a>and acknowledge that you have read our <a href="">Privacy Policy</a> </div>
-
-        <div class="butt"><button id="btn" onclick="userip()" >Start Your Free Trail</button></div>
-
-       
-
-     
-
-        
-
-
-
-
-
+    <div id="imgdiv">
+        <img src="https://assets-global.website-files.com/60780a9b4720a47267a88257/60781445aecccfa5d138f6b8_logo-black.svg" alt="">
     </div>
+    <div id="container">
+        <hr>
+        <div id="topSection">
+            <p>Create a free account</p>
+            <p>Does your company already use Recruitee? <a href="../login page/login.html">Login</a> </p>
+        </div>
 
+        <div id="companyName">
+            <div id="clogo">
+                <img src="https://useruploads.visualwebsiteoptimizer.com/useruploads/372306/images/c0a2aa4cf30d969c5128ef8416aa0fe4_companyname.svg" alt="">
+                <p>Company name</p>
+            </div>
+            <input type="text" placeholder="Your company name" id="cname" >
+            <p id="cmnywarn"></p>
+        </div>
+
+        <div id="fullName">
+            <div id="flogo">
+                <img src="https://useruploads.visualwebsiteoptimizer.com/useruploads/372306/images/b5dc7ed2bf41753b5e27e745f2109410_contactpagefill1wght600grad0opsz48.svg" alt="">
+                <p>Full name</p>
+            </div>
+            <div id="name">
+                <input type="text" placeholder="First name" id="First_name">
+                <input type="text" placeholder="Last name" id="Last_name">
+            </div>
+        </div>
+
+        <div id="email">
+            <div id="elogo">
+                <img src="https://useruploads.visualwebsiteoptimizer.com/useruploads/372306/images/09f75043ad490f48eb827a41c5f8b94f_email.svg" alt="">
+                <p>Your work email</p>
+            </div>
+            <input type="text" placeholder="Your work email"  id="ename">
+            <p id="ewarn"></p>
+            
+        </div>
+
+        <div id="phone">
+            <div id="plogo">
+                <img src="https://useruploads.visualwebsiteoptimizer.com/useruploads/372306/images/ae03ce06227116669b2dcb89645d9add_phonenumber.svg" alt="">
+                <p>Your phone number
+                </p>
+            </div>
+            <div>
+            <select name="" id="">
+                <option value="91">India</option>
+                <option value="">France</option>
+                <option value="">Italy</option>
+                <option value="">Japan</option>
+                <option value="">Hong Kong</option>
+                <option value="">Indonesia</option>
+                <option value="">Australia</option>
+                <option value="">Saint-Pierre and Miquelon (Saint-Pierre-et-Miquelon)</option>
+                <option value="">South Africa</option>
+                <option value="">South Korea</option>
+            </select>
+            <input type="text" id="user_no">
+        </div>
+        </div>
+
+        <div id="password">
+            <div id="passlogo">
+                <img src="https://useruploads.visualwebsiteoptimizer.com/useruploads/372306/images/418aff49207f18953aad1afc2b9fe802_password.svg" alt="">
+                <p>Password</p>
+            </div>
+            <input type="password" placeholder="At least 8 characters" id="mypassword">
+        </div>
+        <div id="condition">
+            <!-- <div>
+                <img src="svg/arrow_right_alt_FILL0_wght400_GRAD0_opsz48.png" alt="" id="right1">
+                <p id="para1">Between 8 and 72 characters</p>
+            </div>
+            <div>
+                <img src="svg/arrow_right_alt_FILL0_wght400_GRAD0_opsz48.png" alt="" id="right1" alt="" id="right2">
+                <p id="para2">Upper and lower case letters</p>
+            </div>
+            <div>
+                <img src="svg/arrow_right_alt_FILL0_wght400_GRAD0_opsz48.png" alt="" id="right1" alt="" id="right3">
+                <p id="para1">At least one number</p>
+            </div> -->
+        </div>
+
+        <div id="privacy">
+            <p>By signing up for our service, you agree to our <span> Terms & Conditions</span></p>
+            <p>and acknowledge that you have read our <span> Privacy Policy.</span></p>
+        </div>
+
+        <div id="btn">
+            <button onclick="userip()">Start my free trail</button>
+        </div>
+    </div>
+    
 </body>
-</html>
-<script src="signup.js">
-
-</script>
+</html> 
+<script src="./signup.js"></script>
+<script src="./signupnew.js" type="module"></script>

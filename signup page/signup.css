@@ -1,110 +1,209 @@
-
-    #outer{
-        width:40%;margin: auto;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    }
-    .logo{
-        width: 30%;margin: auto;margin-top:20px;
-    }
-    .logo>img{
-       margin-left: 135px;height: 70px;
-    }
-    .header{
-        width: 50%;margin: auto;display :flex;justify-content: center;text-shadow: 10%;font-size: small;
-    }
-    .header>h2{
-        font-size:x-large;
-    }
-    .subhead{
-        display: flex;width: 60%;justify-content: center;margin: auto;
-    }
-    .subhead>p{
-        font-size:larger;
-    }
-    .formfeild{
-      margin: auto;width: 60%;display: flex;flex-direction: column;
-    }
-    .formfeild>label{
-        margin-left: 10px;font-weight: bold;
-    }
-    #admin_company_name{
-        width: 90%;margin-left: 20px;margin: 10px;padding: 10PX;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=IBM+Plex+Sans+Arabic:wght@400;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=Lato:wght@700&family=Montserrat:wght@600&family=Nunito:wght@300&family=Open+Sans:wght@300&family=PT+Sans&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=IBM+Plex+Sans+Arabic:wght@400;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=Lato:wght@700&family=Montserrat:wght@600&family=Nunito+Sans:wght@900&family=Nunito:ital,wght@0,300;0,700;1,800&family=Open+Sans:wght@300&family=PT+Sans&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito', sans-serif;
+    background-color: #f5f2fa;
+    /* box-sizing: border-box; */
+}
+#container{
+    width: 24%;
+    margin: auto;
+    /* height: 400px;    */
+    padding: 60px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     
-    .fullname{
-        display: flex;flex-direction: column;
-        width: 60%;margin: auto;width: 100%;
-    }
-    /* .input{
-        border: 1px solid red;width: 50%;margin-left: 70px;
-        margin-top: 10px;
-    } */
-    .fullname>p{
-        margin: auto;
-        width: 30%;font-weight: bold;margin-left: 170px;font-size: larger;
-    }
-   #first_name{
-    padding: 12px;width: 420px;margin-top: 10px;
-   }
-    .input{
-        display: flex;justify-content:space-evenly;
-    }
-    .email{
-        width: 60%;margin: auto;
-    }
-    .email>p{
-        margin-left: 20px;font-weight: bold;font-size: larger;
-    }
-  #user_email{
-    margin-left: 20px;width: 90%;padding: 10px;
-  }
-
-  .uname{
-    width: 60%;margin: auto;
 }
-.uname>p{
-    margin-left: 20px;font-weight: bold;font-size: larger;
+#imgdiv{
+    width: 14%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
-.uname>input{
-margin-left: 20px;width: 90%;padding: 10px;
+#topSection{
+    margin-bottom: 10px;
 }
-
-
-
-
-
-
-  .phone{
-    width: 60%;margin: auto;
+#topSection>p{
+    color: #283542;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    font-family: 'Nunito Sans', sans-serif;   
 }
-.phone>p{
-    margin-left: 20px;font-weight: bold;font-size: larger;
+#topSection>p+p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    color: #4b5359;
 }
-#user_no{
-margin-left: 20px;width: 90%;padding: 10px;
+#clogo{
+    display: flex;
+    align-items: center;
 }
-
-.pass{
-    width: 60%;margin: auto;
+#flogo{
+    display: flex;
+    align-items: center;
 }
-.pass>p{
-    margin-left: 20px;font-weight: bold;font-size: larger;
+#elogo{
+    display: flex;
+    align-items: center;
 }
-#user_pass{
-margin-left: 20px;width: 90%;padding: 10px;
+#plogo{
+    display: flex;
+    align-items: center;
 }
-.info{
-   width: 60%;margin: auto;
+span{
+    cursor: pointer;
+    color: #9bb4e4;
+    text-decoration: underline;
 }
-
-.butt{
-    display: flex;width: 40%;margin: auto;justify-content: center;margin-top: 30px;
+#clogo>img{
+    width: 6%;
+    margin-right: 4px;
 }
-#btn{
-    width: 100%;padding: 10px;color: white;background-color: #8DCDF1;
-    font-size: larger;font-weight: 700;border: transparent;border-radius: 5px;margin-bottom: 20px;
+#clogo>img+p{
+    font-weight: bold;
 }
-.gradient-border {
+#clogo{
+    margin-bottom: 6px;
+}
+#companyName>div+input{
+    padding: 7px 205px 7px 4px;
+    border: 1px solid #c0cad4;
+}
+#companyName{
+    margin-bottom: 15px;
+}
+#flogo>img{
+    width: 7%;
+    height: 7%;
+    margin-right: 4px;
+}
+#flogo>img+p{
+    font-weight: bold;
+}
+#name{
+    display: flex;
+    gap: 14px;
+    
+}
+#name>:nth-child(1){
+    padding: 7px 13px 7px 4px;
+    border: 1px solid #c0cad4;
+}
+#name>:nth-child(2){
+    padding: 7px 13px 7px 4px;
+    border: 1px solid #c0cad4;
+}
+#flogo{
+    margin-bottom: 6px;
+}
+#fullName{
+    margin-bottom: 15px;
+}
+#elogo>img{
+    width: 6%;
+    margin-right: 4px;
+}
+#elogo>img+p{
+    font-weight: bold;
+}
+#elogo{
+    margin-bottom: 6px;
+}
+#email>div+input{
+    padding: 7px 205px 7px 4px;
+    border: 1px solid #c0cad4;
+}
+#email{
+    margin-bottom: 15px;
+}
+#plogo>img{
+    width: 6%;
+    margin-right: 4px;
+}
+#plogo>img+p{
+    font-weight: bold;
+}
+#plogo{
+    margin-bottom: 6px;
+}
+#phone{
+    margin-bottom: 10px;
+}
+#passlogo{
+    display: flex;
+    margin-bottom: 6px;
+}
+#passlogo>img{
+    width: 6%;
+    margin-right: 4px;
+}
+#passlogo>img+p{
+    font-weight: bold;
+}
+#passlogo+input{
+    padding: 7px 205px 7px 4px;
+    border: 1px solid #c0cad4;
+}
+#condition{
+    margin-bottom: 10px;
+}
+#password{
+    margin-bottom: 10px;
+}
+#condition>div{
+    display: flex;
+    align-items: center;
+}
+#condition>div>img{
+    width: 6%;
+}
+#condition>div>img+p{
+    font-size: 14px;
+}
+#privacy>p{
+    font-size: 12.5px;
+    font-weight: 500;
+    color: #4d6072;
+}
+#privacy{
+    margin-bottom: 13px;
+}
+#btn>button{
+    background-color: #8cccf1;
+    padding: 12px 125px;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 0.1px;
+    font-weight: bold;
+    border: 1px solid rgb(149, 149, 219);
+    border-radius: 3px;
+    
+}
+#plogo+div{
+    display: flex;
+}
+#plogo+div>select{
+    width: 70px;
+    padding: 7px 0px 7px 0px;
+    border: 1px solid #c0cad4;
+    border-right: 1px solid white;
+}
+#plogo+div>select+input{
+    padding: 7px 133px 7px 4px;
+    border: 1px solid #c0cad4;
+}
+hr{
+    margin-top: -17%;
+    width: 100%;
+    height: 15px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 0 59px 0 59px;
+    margin-left: -59px;
+    margin-bottom: 20px;
     background: linear-gradient(-90deg, #31bd95 0%, #7dd47a 22%, #7cccfa 42%, #1999e3 57%, #ca8bdb 78%, #7148bd 100%);
-    height: 16px;
-    max-width: 100%;
+    background-image: linear-gradient(-90deg, rgb(49, 189, 149) 0%, rgb(125, 212, 122) 22%, rgb(124, 204, 250) 42%, rgb(25, 153, 227) 57%, rgb(202, 139, 219) 78%, rgb(113, 72, 189) 100%);
 }
